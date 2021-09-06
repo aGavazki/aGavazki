@@ -979,6 +979,10 @@ section {
 .contact .php-email-form button[type="submit"]:hover {
   background: #37b3ed;
 }
+container.calendar{
+    width: 1.5em;
+    height: 1.5em;
+}
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -1101,7 +1105,4 @@ section {
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
-}
-div.name
-  font-size: 4em;
 }
