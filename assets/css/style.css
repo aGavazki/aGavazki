@@ -409,20 +409,19 @@ section {
 --------------------------------------------------------------*/
 
 .image-container {
-    width: 200; /* Set the desired maximum width */
-    height: 150; /* Set the desired maximum height */
-    overflow: hidden; /* Hide overflow to ensure images do not exceed container bounds */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    gap: 10px; /* Space between images */
     background-color: #f0f0f0; /* Optional: background color for the container */
     border: 1px solid #ccc; /* Optional: border for the container */
+    padding: 10px; /* Optional: padding for the container */
 }
 
 .image-container img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 100px; /* Set the desired maximum width for each image */
+    max-height: 100px; /* Set the desired maximum height for each image */
     object-fit: cover; /* Cover the container maintaining aspect ratio */
+    flex: 1 1 auto; /* Allow images to grow and shrink as needed */
 }
 .skills .progress {
   height: 60px;
